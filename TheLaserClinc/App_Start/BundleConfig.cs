@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System.Reflection;
+using System.Web;
 using System.Web.Optimization;
 
 namespace TheLaserClinc
@@ -8,24 +9,40 @@ namespace TheLaserClinc
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+           // BundleTable.EnableOptimizations = false;
+            CacheBuster();
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
-
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+            bundles.Add(new ScriptBundle("~/bundles/site").Include(
+                      "~/js/jquery-1.12.4.js",
+                      "~/Scripts/jquery.validate*",
+                       "~/js/bootstrap.min.js",
+                        "~/js/bootsnav.js",
+                         "~/js/parallax.js",
+                          "~/js/scrollto.js",
+                           "~/js/jquery-scrolltofixed-min.js",
+                           "~/js/jquery-SmoothScroll-min.js",
+                           "~/js/jquery.counterup.js",
+                           "~/js/gallery.js",
+                            "~/js/wow.min.js",
+                             "~/js/slider.js",
+                              "~/js/video-player.js",
+                               "~/js/timepicker.js",
+                               "~/js/script.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/css/bootstrap.min.css",
+                      "~/css/style.css",
+                      "~/css/responsive.css"));
+        }
+
+        public static void CacheBuster()
+        {
+            string versionNumber = Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            Styles.DefaultTagFormat = string.Format("<link href='{{0}}?v={0}' rel='stylesheet'/>", versionNumber);
+            Scripts.DefaultTagFormat = string.Format("<script src='{{0}}?v={0}'></script>", versionNumber);
         }
     }
 }
+
+

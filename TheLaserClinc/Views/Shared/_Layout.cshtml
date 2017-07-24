@@ -3,42 +3,201 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <title>@ViewBag.Title - The Laser Clinic Morpeth</title>
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <link href="@Url.Content("~/css/Site.css")" rel="stylesheet" />
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+    <div class="wrapper">
+        <div class="preloader"></div>
+        <div class="ulockd-header-topped">
+            <div class="container">
+                <div class="row">
+                    <div class="hidden-xs col-sm-4 col-md-4">
+                        <div class="ulockd-social-linked">
+                            <ul class="list-inline">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="ulockd-welcm-ht text-center">
+                            <p class="ulockd-welcntxt">Welcome To The Laser Clinic <span class="hidden-sm hidden-xs">- Morpeth</span></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="ulockd-welcm-ht text-right">
+                            <p class="ulockd-welcntxt">Phone:<span class="text-thm1"> <a class="phone" href="tel:+447783376702">07783376702</a></span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+        <!-- Header Styles -->
+        <header class="header-nav">
+            <div class="main-header-nav navbar-scrolltofixed">
+                <div class="container">
+                    <nav class="navbar navbar-default bootsnav ulockd-menu-style1 light-blue">
+                        <div class="container ulockd-pad-zero">
+                            <!-- Start Header Navigation -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                                    <i class="fa fa-bars logo"></i>
+                                </button>
+                            </div>
+                            <!-- End Header Navigation -->
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse ulockd-padd-md-30" id="navbar-menu">
+                                <ul class="nav navbar-nav navbar-left">
+                                    <li class="hidden-xs"><a href="@Url.Action("Index","Home")" class="logo">The Laser Clinic</a></li>
+                                    <li class="dropdown">
+                                        <a  class="dropdown-toggle" data-toggle="dropdown">Treatments</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="@Url.Action("LaserHairRemoval","Treatments")">Laser Hair Removal</a></li>
+                                            <li><a href="@Url.Action("Acne","Treatments")">Acne</a></li>
+                                            <li><a href="@Url.Action("PigmentationRemoval", "Treatments")">Pigmentation</a></li>
+                                            <li><a href="@Url.Action("VascularTreatment", "Treatments")">Vascular</a></li>
+                                        </ul>
+                                    </li>
+
+                                   
+                                    <li><a href="@Url.Action("Index", "Costs")">Costs</a></li>
+                                    <li><a href="@Url.Action("Index", "Specials")">Special Offers</a></li>
+                                    <li><a href="@Url.Action("Contact", "Home")">Contact Us</a></li>
+
+                                </ul>
+
+
+                                <ul class="pull-right hidden-xs hidden-sm"></ul>
+
+                                @*<ul class="ulockd-quote-btn pull-right hidden-xs hidden-sm">
+                                        <li>
+                                            <a href="#" class="btn btn-lg ulockd-btn-thm hvr-curl-bottom-right"><span> Get A Quote</span></a>
+                                        </li>
+                                    </ul>*@
+
+                                <img src="~/images/lyntonlogo.gif" alt="lynton lasers logo" height="78" class="pull-right hidden-xs hidden-sm" />
+                            </div><!-- /.navbar-collapse -->
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+
+        </header>
+
+        <a class="scrollToHome" href="#"><i class="fa fa-home"></i></a>
     </div>
-    <div class="container body-content">
+    <div>
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <!-- Our Footer -->
+        <footer class="ulockd-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="ulockd-footer-qlink">
+                            <h3 class="text-uppercase">NAVIGATI<span class="text-thm1">ON</span></h3>
+                            <ul class="list-unstyled">
+                                <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                                <li><a href="@Url.Action("LaserHairRemoval","Treatments")">Laser Hair Removal</a></li>
+                                <li><a href="@Url.Action("Acne","Treatments")">Acne Treatment</a></li>
+                                <li><a href="@Url.Action("PigmentationRemoval", "Treatments")">Pigmentation Removal</a></li>
+                                <li><a href="@Url.Action("VascularTreatment", "Treatments")">Vascular Treatment</a></li>
+                                <li><a href="@Url.Action("Index", "Costs")">Costs</a></li>
+                                <li><a href="@Url.Action("Index", "Specials")">Special Offers</a></li>
+                                <li><a href="@Url.Action("Contact", "Home")">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="ulockd-footer-contact">
+                            <h3 class="text-uppercase">CONTACT <span class="text-thm1">US</span></h3>
+                            <p>
+                                The Laser Clinic
+
+                                <br />The Cottage
+                                <br />Newton Redhouse
+
+                                <br />Mitford
+                                <br />Morpeth
+                                <br />NE61 3QW
+                            </p>
+                            <div class="ulockd-ftr-phone"><span>Phone <i class="fa fa-phone" aria-hidden="true"></i> </span>: <a href="tel:+447783376702">07783376702</a></div>
+                            <div class="ulockd-ftr-mail"><span>Email <i class="fa fa-envelope" aria-hidden="true"></i> </span>: <a href="mailto:susan@thelaserclinic.org.uk">susan@thelaserclinic.org.uk</a></div>
+                            <div class="ulockd-ftr-mail"><span>Website </span>: <a href="http://thelaserclinic.org.uk">http://thelaserclinic.org.uk</a></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="ulockd-footer-twitter example1">
+                            <h3 class="text-uppercase">LYNTON APPROV<span class="text-thm1">ED</span></h3>
+                            <div class="media">
+                                <div class="media-left pull-left">
+                                    <a href="#">
+                                        <img class="media-object" src="~/images/lynton-approved-clinic-.png" alt="twitter-feed.png">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
+
+        <!-- Our CopyRight Section -->
+        <section class="ulockd-copy-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Copyright© The Laser Clinic @DateTime.Now.Year</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/bundles/site")
+
+
 </body>
 </html>

@@ -1,0 +1,79 @@
+﻿@import "jquery-ui.min.css";
+@import "font-awesome.min.css";
+@import "font-awesome-animation.min.css";
+@import "flaticon.css";
+@import "animate.css";
+@import "bootsnav.css";
+@import "fullcalendar.css";
+@import "hover.css";
+@import "fancyBox.css";
+@import "jquery.flickr.css";
+@import "owl.css";
+@import "isotop.css";
+/*@import "magnific-popup.css";
+@import "flipclock.css";
+@import "timecounter.css";*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300i,400,500,700);
+
+
+.logo {
+    font-size: x-large !important;
+    color: #004489 !important;
+}
+
+.question-header {
+    color: #004489 !important;
+}
+
+.phone {
+    color: #fff;
+    position: relative;
+}
+
+.calltext {
+    color: #fff;
+    position: relative;
+    font-size: larger;
+}
+
+.bgcolor-primary ::before {
+    background-color: #004489 !important;
+}
+
+.ulockd-main-slider .caption.style2 {
+    background-image: url("../images/photos/IMG_2357.jpg") !important;
+}
+
+.ulockd-main-slider .caption.style3 {
+    background-image: url("../images/photos/IMG_2344.jpg") !important;
+}
+
+.ulockd-service-two {
+    background-image: url(../images/photos/IMG_2364.jpg) !important;
+}
+
+
+@media only screen and (max-width : 767px) {
+    .ulockd-footer {
+        padding-bottom: 0;
+        padding-top: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    nav.navbar.navbar-default.bootsnav.ulockd-menu-style1 {
+        background: white;
+    }
+}
+
+
+.ulockd-contact-place a {
+    color:white !important;
+}
+
+li.dropdown ul.dropdown-menu {
+    background-color: white !important;
+    color: #004489 !important;
+}

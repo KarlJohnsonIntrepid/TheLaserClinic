@@ -1,31 +1,123 @@
 ﻿@{
     ViewBag.Title = "Home Page";
+
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<!-- Home Design -->
+<div class="ulockd-home-slider">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 ulockd-pmz">
+                <div class="ulockd-main-slider">
+                    <div class="item">
+                        <div class="caption style1 text-left">
+                            <div class="ulockd-slider-text1 wow fadeInUp" data-wow-duration="300ms" data-wow-delay=".3s">THE LASER CLINIC</div>
+                            <div class="ulockd-slider-text2 wow fadeInUp" data-wow-duration="600ms" data-wow-delay=".6s">The best laser and skin <span class="text-thm1"> Treatments</span></div>
+                            <div class="ulockd-slider-text3 wow fadeInUp" data-wow-duration="900ms" data-wow-delay=".9s">
+                                <p>We provide Lynton Luminette IPL hair removal, skin pigmentation removal, red vein removal and acne treatment in Morpeth and the North East</p>
+                            </div>
+                            <a href="@Url.Action("Contact","Home")" class="btn btn-lg ulockd-btn-thm ulockd-home-btn wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="1.2s"><span> Get A Quote</span></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="caption style2 text-center">
+                            <div class="ulockd-slider-text1 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay=".1.5s">THE LASER CLINIC</div>
+                            <div class="ulockd-slider-text2 wow fadeInUp" data-wow-duration="1800ms" data-wow-delay="1.8s">Your Satisfaction Our<span class="text-thm1"> Goal </span></div>
+                            <div class="ulockd-slider-text3 wow fadeInUp" data-wow-duration="2100ms" data-wow-delay="2.1s">
+                                <p>To book a consultation and test patch please call 07783376702</p>
+                            </div>
+                            <a href="@Url.Action("Contact","Home")" class="btn btn-lg ulockd-btn-thm ulockd-home-btn wow fadeInUp" data-wow-duration="2400ms" data-wow-delay="2.4s"><span> Get A Quote</span></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="caption style3 text-right">
+                            <div class="ulockd-slider-text1 wow fadeInRight" data-wow-duration="2700ms" data-wow-delay="2.7s">THE LASER CLINIC</div>
+                            <div class="ulockd-slider-text2 wow fadeInRight" data-wow-duration="3000ms" data-wow-delay="3s">Laser Hair<span class="text-thm1"> Removal</span></div>
+                            <div class="ulockd-slider-text3 wow fadeInRight" data-wow-duration="3300ms" data-wow-delay="3.3s">
+                             <p>The Laser Clinic offers Lynton Luminette IPL hair removal in Morpeth and the North East so you can say goodbye to messy waxing and daily shaving.</p>
+                            </div>
+                            <a href="@Url.Action("Contact","Home")" class="btn btn-lg ulockd-btn-thm ulockd-home-btn wow fadeInRight" data-wow-duration="3600ms" data-wow-delay="3.6s"><span> Get A Quote</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<!-- Our First Divider -->
+<section class="ulockd-frst-divider">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="ulockd-dvidr-mttl">We Offer Quality Full and Affordable Service For You.</h2>
+                <div class="ulockd-dvidr-btn text-uppercase"><a class="btn btn-default ulockd-btn-white hvr-overline-from-center" href="@Url.Action("Contact","Home")">Get Appointment</a></div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+</section>
+
+<!-- Our Service -->
+<section class="ulockd-service-two parallax" data-stellar-background-ratio="0.3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-3 text-center">
+                <div class="ulockd-srvc-title hvr-float-shadow">
+                    <h2 class="text-uppercase">Our <span class="text-thm1">Services</span></h2>
+                    @*<p>Medicinal Service Company puts stock in conveying the most elevated quality administration with quality and sympathy every day.</p>*@
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-xs-12 col-sm-6 col-md-6 hvr-underline-from-center">
+                <a href="@Url.Action("PigmentationRemoval", "Treatments")">
+                    <div class="ulockd-srvc-column">
+                        <div class="ulockd-srv-icon pull-left"><span class="flaticon-medical-30"></span></div>
+                        <div class="ulockd-srvc-details">
+                            <h3>Pigment Removal</h3>
+                            <p>
+                                Pigmented lesions such as sun spots and freckles can be successfully removed creating a more flawless, youthful and glowing appearance.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 hvr-underline-from-center">
+                <a href="@Url.Action("VascularTreatment", "Treatments")">
+                    <div class="ulockd-srvc-column">
+                        <div class="ulockd-srv-icon pull-left"><span class="flaticon-medical-29"></span></div>
+                        <div class="ulockd-srvc-details">
+                            <h3>Red Vein Removal</h3>
+                            <p>We can provide a long term solution to facial problems such as red flushing (Rosacea), thread veins and red spots in just a few quick and easy treatments.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 hvr-underline-from-center">
+                <a href="@Url.Action("LaserHairRemoval","Treatments")">
+                    <div class="ulockd-srvc-column">
+                        <div class="ulockd-srv-icon pull-left"><span class="flaticon-people-9"></span></div>
+                        <div class="ulockd-srvc-details">
+                            <h3>Hair Removal</h3>
+                            <p>We offer a safe, long-term solution to unwanted, excess hair for both men and women. Treatment is suitable for the face and body, is quick and results can be seen after just a few sessions.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 hvr-underline-from-center">
+                <a href="@Url.Action("Acne", "Treatments")">
+                    <div class="ulockd-srvc-column">
+                        <div class="ulockd-srv-icon pull-left"><span class="flaticon-medical-12"></span></div>
+                        <div class="ulockd-srvc-details">
+                            <h3>Acne Treatment</h3>
+                            <p>Acne can be effectively treated with Intense Pulsed Light alone or in combination with other clinical treatments. Intense Pulsed Light treatments greatly reduce the number and severity of active lesions, lessening the inflammation and frequency of break-outs.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+</section>
+
+

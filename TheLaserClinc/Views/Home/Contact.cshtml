@@ -1,17 +1,120 @@
-﻿@{
-    ViewBag.Title = "Contact";
+﻿@model TheLaserClinc.Models.Contact
+@{
+    ViewBag.Title = "Contact The Laser Clinic";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<!-- Inner Pages Main Section -->
+<section class="ulockd-contact-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div class="ulockd-cp-title">
+                    <h2 class="text-uppercase">CONTACT DETAILS</h2>
+                </div>
+                <div class="ulockd-contact-details">
+                    <ul class="list-inline ulockd-contact-place" style="color:white;">
+                        <li><a href="mailto:susan@thelaserclinic.org.uk"><span class="flaticon-black-back-closed-envelope-shape"></span></a></li>
+                        <li><a href="tel:+447783376702"><span class="flaticon-old-handphone"></span></a></li>
+                        <li><a href="http://maps.google.com/maps?q=loc:55.1651529,-1.7822250000000395" target="_blank"><span class="flaticon-map-marker"></span></a></li>
+                        <li><span class="flaticon-checkbox-pen-outline"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="ulockd-contact-form">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="messages"></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+                                    @Html.TextBoxFor(x => x.Name, new {@class = "form-control ulockd-form-fg required", placeholder = "Your name"  })
+                                    @Html.ValidationMessageFor(x => x.Name)
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    @Html.TextBoxFor(x => x.Email, new { @class = "form-control ulockd-form-fg required email", placeholder = "Your email" })
+                                    @Html.ValidationMessageFor(x => x.Email)
+                                  
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    @Html.TextBoxFor(x => x.Phone, new { @class = "form-control ulockd-form-fg required", placeholder = "Phone" })
+                                    @Html.ValidationMessageFor(x=> x.Phone)
+                                  
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    @Html.TextBoxFor(x => x.Subject, new { @class = "form-control ulockd-form-fg required", placeholder = "Subject" })
+                                    @Html.ValidationMessageFor(x => x.Subject)
+                                   
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    @Html.TextAreaFor(x => x.Message, new { @class = "form-control ulockd-form-tg required", placeholder = "Your message" })
+                                    @Html.ValidationMessageFor(x => x.Message)
+                      
+                                </div>
+                                <div class="form-group ulockd-contact-btn">
+                                    <input id="form_botcheck" name="form_botcheck" class="form-control" value="" type="hidden">
+                                    <button type="submit" class="btn btn-default ulockd-btn-thm" data-loading-text="Getting Few Sec...">SUBMIT</button>
+                                </div>
+
+                                @if (Model.Submitted)
+                                {
+                                    <span>Thank you, your message has been submitted and we will be in touch shortly</span>
+                                }
+
+                                @if (Model.Failed)
+                                {
+                                    <span>Sorry we were unable to send your message</span>
+                                }
+                            </div>
+                        </div>
+                    }
+                </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="ulockd-google-map">
+                        <div class="" id="map-location" style="height: 312px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- Google Map Javascript Codes -->
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyApvLVHjbNu12LExQk0Ds5QFV7OdLv3Hgg&sensor=true"></script>
+<script src="/js/googlemaps.js"></script>
+<script src="~/js/jquery-1.12.4.js"></script>
+<script>
+
+    $(function () {
+        if ($('#map-location').length) {
+            var map;
+            map = new GMaps({
+                el: '#map-location',
+                zoom: 12,  // zooming option you incrase or reduce map zoom
+                scrollwheel: false,
+                //Set Latitude and Longitude Here
+                lat: 55.1651529,
+                lng: -1.7822250000000395
+            });
+
+            map.addMarker({
+                lat: 55.1651529,
+                lng: -1.7822250000000395,
+                title: 'The Laser Clinc'
+            });
+        }
+
+    })
+</script>
