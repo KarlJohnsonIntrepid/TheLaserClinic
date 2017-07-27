@@ -36,5 +36,12 @@ namespace TheLaserClinc.Controllers
 
             return View();
         }
+
+        public ActionResult SkinRejuvenation()
+        {
+            ViewBag.Treatment = "Vascular Treatment";
+
+            return View();
+        }
     }
 }

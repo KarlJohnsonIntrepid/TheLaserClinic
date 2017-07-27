@@ -305,6 +305,10 @@
     <Content Include="images\beforeafter\pigmentation2after.jpg" />
     <Content Include="images\beforeafter\pigmentation2before.jpg" />
     <Content Include="images\beforeafter\pigmentationbefore.jpg" />
+    <Content Include="images\beforeafter\SkinRejuvenation1After.JPG" />
+    <Content Include="images\beforeafter\SkinRejuvenation1Before.JPG" />
+    <Content Include="images\beforeafter\SkinRejuvenation2After.jpg" />
+    <Content Include="images\beforeafter\SkinRejuvenation2Before.jpg" />
     <Content Include="images\beforeafter\vascularafter.jpg" />
     <Content Include="images\beforeafter\vascularafter2.jpg" />
     <Content Include="images\beforeafter\vascularbefore.jpg" />
@@ -607,6 +611,7 @@
     <Content Include="Views\Treatments\VascularTreatment.cshtml" />
     <Content Include="Views\Costs\Index.cshtml" />
     <Content Include="Views\Specials\Index.cshtml" />
+    <Content Include="Views\Treatments\SkinRejuvenation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

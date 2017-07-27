@@ -22,7 +22,6 @@
     <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-
     <title>@ViewBag.Title - The Laser Clinic Morpeth</title>
     @Styles.Render("~/Content/css")
     <link href="@Url.Content("~/css/Site.css")" rel="stylesheet" />
@@ -89,8 +88,9 @@
                                     <li class="dropdown">
                                         <a  class="dropdown-toggle" data-toggle="dropdown">Treatments</a>
                                         <ul class="dropdown-menu">
-                                            <li><a href="@Url.Action("LaserHairRemoval","Treatments")">Laser Hair Removal</a></li>
-                                            <li><a href="@Url.Action("Acne","Treatments")">Acne</a></li>
+                                            <li><a href="@Url.Action("SkinRejuvenation", "Treatments")">Skin Rejuvenation</a></li>
+                                            <li><a href="@Url.Action("LaserHairRemoval", "Treatments")">Laser Hair Removal</a></li>
+                                            <li><a href="@Url.Action("Acne", "Treatments")">Acne</a></li>
                                             <li><a href="@Url.Action("PigmentationRemoval", "Treatments")">Pigmentation</a></li>
                                             <li><a href="@Url.Action("VascularTreatment", "Treatments")">Vascular</a></li>
                                         </ul>
@@ -138,6 +138,7 @@
                             <h3 class="text-uppercase">NAVIGATI<span class="text-thm1">ON</span></h3>
                             <ul class="list-unstyled">
                                 <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                                <li><a href="@Url.Action("SkinRejuvenation", "Treatments")">Skin Rejuvenation</a></li>
                                 <li><a href="@Url.Action("LaserHairRemoval","Treatments")">Laser Hair Removal</a></li>
                                 <li><a href="@Url.Action("Acne","Treatments")">Acne Treatment</a></li>
                                 <li><a href="@Url.Action("PigmentationRemoval", "Treatments")">Pigmentation Removal</a></li>
