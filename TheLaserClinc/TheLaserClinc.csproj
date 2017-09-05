@@ -395,6 +395,7 @@
     <Content Include="images\index.html" />
     <Content Include="images\lynton-approved-clinic-.png" />
     <Content Include="images\lyntonlogo.gif" />
+    <Content Include="images\nhs-logo.png" />
     <Content Include="images\partners\partner1.png" />
     <Content Include="images\partners\partner2.png" />
     <Content Include="images\partners\partner3.png" />
