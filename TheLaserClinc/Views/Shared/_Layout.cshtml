@@ -41,15 +41,15 @@
         <div class="preloader"></div>
         <div class="ulockd-header-topped">
             <div class="container">
-                <div class="row">
+                <div class="row hidden-xs">
                     <div class="hidden-xs col-sm-4 col-md-4">
                         <div class="ulockd-social-linked">
                             <ul class="list-inline">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                <li><a href="https://www.facebook.com/The-Laser-Clinic-255197774926934/"><i class="fa fa-facebook"></i></a></li>
+                                @*<li><a href="#"><i class="fa fa-rss"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                 <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>*@
                             </ul>
                         </div>
                     </div>
@@ -79,6 +79,10 @@
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                     <i class="fa fa-bars logo"></i>
                                 </button>
+
+                                <ul class="hidden-md hidden-lg" style="padding-top: 10px;">
+                                    <li><a href="/" class="logo">The Laser Clinic</a></li>
+                                </ul>
                             </div>
                             <!-- End Header Navigation -->
                             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -86,7 +90,7 @@
                                 <ul class="nav navbar-nav navbar-left">
                                     <li class="hidden-xs"><a href="@Url.Action("Index","Home")" class="logo">The Laser Clinic</a></li>
                                     <li class="dropdown">
-                                        <a  class="dropdown-toggle" data-toggle="dropdown">Treatments</a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown">Treatments</a>
                                         <ul class="dropdown-menu">
                                             <li><a href="@Url.Action("SkinRejuvenation", "Treatments")">Skin Rejuvenation</a></li>
                                             <li><a href="@Url.Action("LaserHairRemoval", "Treatments")">Laser Hair Removal</a></li>
@@ -96,7 +100,7 @@
                                         </ul>
                                     </li>
 
-                                   
+
                                     <li><a href="@Url.Action("Index", "Costs")">Costs</a></li>
                                     <li><a href="@Url.Action("Index", "Specials")">Special Offers</a></li>
                                     <li><a href="@Url.Action("Contact", "Home")">Contact Us</a></li>
@@ -165,6 +169,10 @@
                             <div class="ulockd-ftr-phone"><span>Phone <i class="fa fa-phone" aria-hidden="true"></i> </span>: <a href="tel:+447783376702">07783376702</a></div>
                             <div class="ulockd-ftr-mail"><span>Email <i class="fa fa-envelope" aria-hidden="true"></i> </span>: <a href="mailto:susan@thelaserclinic.org.uk">susan@thelaserclinic.org.uk</a></div>
                             <div class="ulockd-ftr-mail"><span>Website </span>: <a href="http://thelaserclinic.org.uk">http://thelaserclinic.org.uk</a></div>
+                            
+                            <div class="ulockd-ftr-mail"><span>Facebook </span>: <a href="https://www.facebook.com/The-Laser-Clinic-255197774926934/"><i class="fa fa-facebook"></i></a></div>
+                           
+                        
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">

@@ -21,6 +21,8 @@
 .logo {
     font-size: x-large !important;
     color: #004489 !important;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .question-header {
@@ -70,10 +72,51 @@
 
 
 .ulockd-contact-place a {
-    color:white !important;
+    color: white !important;
 }
 
 li.dropdown ul.dropdown-menu {
     background-color: white !important;
     color: #004489 !important;
 }
+
+
+@media only screen and (max-width: 767px) {
+    .navbar.bootsnav .dropdown li > a {
+        color: #555555;
+    }
+
+    .ulockd-contact-page, .ulockd-service-details {
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+
+    .prices hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .ulockd-inner-home {
+        padding-top: 20px;
+    }
+
+    .ulockd-icd-layer {
+        margin-top: 50px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+}
+
+.ulockd-main-slider .ulockd-slider-text3 p {
+    opacity: 0.8 !important;
+}
+
+nav.navbar.bootsnav.ulockd-menu-style1 ul.nav > li > a {
+     padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav { margin: 10px; }
+
+}
+           
