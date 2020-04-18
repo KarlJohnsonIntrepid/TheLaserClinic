@@ -43,5 +43,19 @@ namespace TheLaserClinc.Controllers
 
             return View();
         }
+
+        public ActionResult RemodelRadioFrequency()
+        {
+            ViewBag.Treatment = "Remodel RF (Radio Frequency)";
+
+            return View();
+        }
+
+        public ActionResult ResurfaceFractionalLaser()
+        {
+            ViewBag.Treatment = "Resurface Fractional Laser";
+
+            return View();
+        }
     }
 }

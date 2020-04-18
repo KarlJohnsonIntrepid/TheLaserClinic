@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -613,6 +614,8 @@
     <Content Include="Views\Costs\Index.cshtml" />
     <Content Include="Views\Specials\Index.cshtml" />
     <Content Include="Views\Treatments\SkinRejuvenation.cshtml" />
+    <Content Include="Views\Treatments\ResurfaceFractionalLaser.cshtml" />
+    <Content Include="Views\Treatments\RemodelRadioFrequency.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
