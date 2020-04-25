@@ -298,6 +298,9 @@
     <Content Include="images\background\2.jpg" />
     <Content Include="images\background\3.jpg" />
     <Content Include="images\background\inner-pagebg.jpg" />
+    <Content Include="images\beforeafter\3JUVEAcneScarringLaserSkinSolutions.gif" />
+    <Content Include="images\beforeafter\3JUVEResurfaceFineLines.png" />
+    <Content Include="images\beforeafter\3JUVEResurfaceScarring.jpg" />
     <Content Include="images\beforeafter\hairafter.jpg" />
     <Content Include="images\beforeafter\hairbackafter.jpg" />
     <Content Include="images\beforeafter\hairbackbefore.jpg" />
@@ -558,6 +561,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="favicons\manifest.json" />
+    <Content Include="downloads\3JUVE Patient Leaflet.pdf" />
+    <Content Include="downloads\Lynton Skin Rejuvenation Patient Leaflet Updated 25 Years Logo 2019.pdf" />
     <None Include="Properties\PublishProfiles\thelaserclinic.org.uk - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="images\Background.jpg" />
