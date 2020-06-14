@@ -57,6 +57,14 @@
 }
 
 
+@media only screen and (min-width : 767px) {
+    .slider-text-slim {
+        margin-right: 200px !important;
+    }
+}
+
+
+
 @media only screen and (max-width : 767px) {
     .ulockd-footer {
         padding-bottom: 0;

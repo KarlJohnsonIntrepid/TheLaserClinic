@@ -309,10 +309,14 @@
     <Content Include="images\beforeafter\pigmentation2after.jpg" />
     <Content Include="images\beforeafter\pigmentation2before.jpg" />
     <Content Include="images\beforeafter\pigmentationbefore.jpg" />
+    <Content Include="images\beforeafter\Scarring---ResurFACE--.jpg" />
     <Content Include="images\beforeafter\SkinRejuvenation1After.JPG" />
     <Content Include="images\beforeafter\SkinRejuvenation1Before.JPG" />
     <Content Include="images\beforeafter\SkinRejuvenation2After.jpg" />
     <Content Include="images\beforeafter\SkinRejuvenation2Before.jpg" />
+    <Content Include="images\beforeafter\Stretch-marks---ResurFACE--.jpg" />
+    <Content Include="images\beforeafter\Stretch-marks-2---ResurFACE--.jpg" />
+    <Content Include="images\beforeafter\Stretch-marks-3---ResurFACE--.jpg" />
     <Content Include="images\beforeafter\vascularafter.jpg" />
     <Content Include="images\beforeafter\vascularafter2.jpg" />
     <Content Include="images\beforeafter\vascularbefore.jpg" />
@@ -562,7 +566,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="favicons\manifest.json" />
     <Content Include="downloads\3JUVE Patient Leaflet.pdf" />
-    <Content Include="downloads\Lynton Skin Rejuvenation Patient Leaflet Updated 25 Years Logo 2019.pdf" />
+    <Content Include="downloads\Lynton ResurFACE Patient Leaflet Updated 25 Years Logo 2019.pdf" />
     <None Include="Properties\PublishProfiles\thelaserclinic.org.uk - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="images\Background.jpg" />
