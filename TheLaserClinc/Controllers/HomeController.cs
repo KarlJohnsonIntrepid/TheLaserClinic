@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Mail;
 using System.Web;
 using System.Web.Mvc;
@@ -35,7 +36,9 @@ namespace TheLaserClinc.Controllers
                 //Configure an SmtpClient to send the mail.
                 SmtpClient client = new SmtpClient("relay-hosting.secureserver.net");
                 client.Port = 25;
-
+                client.Credentials = new NetworkCredential("susan@thelaserclinic.org.uk", "Th3laserclinic");
+         
+   
                 //Send the msg
                 client.Send(msg);
 
